@@ -173,7 +173,7 @@ namespace Silicon {
 		friend class Object;
 
 		const char* name;
-		std::vector<Type*> bases;
+		std::vector<Type*> bases;  // not OK (should not be a vector)
 		namedict<CallableHelper> instance_methods;
 		namedict<CallableHelper> class_methods;
 		namedict<CallableHelper> static_methods;
